@@ -1,4 +1,5 @@
 package Learning_Java;
+
 // import statements
 import java.text.DecimalFormat;
 import java.util.Scanner;
@@ -8,11 +9,6 @@ public class SalaryCalculator {
    public static void main(String[] args) {
       // using scanner to get input
       Scanner input = new Scanner(System.in);
-
-      // declaring variables
-      double grossPay;
-      double vac;
-      double salary;
 
       try {
          // getting input from user
@@ -26,9 +22,9 @@ public class SalaryCalculator {
          double vacation = Double.parseDouble(input.next());
 
          // calculating gross pay, vacation pay, then salary
-         grossPay = rate * hours;
-         vac = vacation * hours * 8;
-         salary = (grossPay * 52) - vac;
+         double grossPay = rate * hours;
+         double vac = vacation * hours * 8;
+         double salary = (grossPay * 52) - vac;
          // formatting salary's decimal places
          DecimalFormat df = new DecimalFormat("#.##");
 
