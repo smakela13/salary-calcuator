@@ -1,5 +1,3 @@
-package Learning_Java;
-
 // import statements
 import java.text.DecimalFormat;
 import java.util.Scanner;
